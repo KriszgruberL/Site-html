@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Laura_Kriszgruber_Projet2/style/style.css">
+    <title>Formulaire de contact</title>
+</head>
+<body>
+    <header>
+        <img class="imgHead" src="../Laura_Kriszgruber_Projet2/img/header.png">
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="produits.html">Artistes</a></li>
+                <li><a href="form.html">Formulaire de contact</a></li>
+                <li><a href="apropos.html">A propos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="container main">
+        <p class="text">Bienvenue sur la page contact de notre site ! 
+            <br>
+            <br>
+            Vous êtes à la recherche d'informations complémentaires sur notre base de données d'artistes spécialisés dans cet univers fascinant ? 
+            Vous souhaitez nous contacter pour toute question, suggestion ou remarque concernant notre plateforme ? 
+            <br>
+            <br>
+            Vous êtes au bon endroit ! Nous mettons à votre disposition un formulaire de contact pour que vous puissiez nous joindre facilement sans avoir à nous téléphoner ! 
+            <br>
+            <br>
+            Nous sommes à votre écoute et nous nous ferons un plaisir de répondre à toutes vos demandes dans les meilleurs délais.
+            <br>
+            <br> 
+            Merci de votre intérêt pour ce projet et à très bientôt !
+        </p>
+    </section>
+    <br>
+    <div class="container">
+        <h2>Formulaire de contact</h2>
+        <form method="post">
+            <fieldset>
+                <legend>Coordonnée</legend>
+                <input type="text" class="left mid" placeholder="Nom">
+                <input type="text" class="right mid" required placeholder="Prénom / Pseudo">
+                <input type="email" placeholder="Adresse mail" class="left mid" required>
+                <input type="url" placeholder="Site internet" class="right mid ">
+                <div class="left">
+                    <label for="">Genre : </label>
+                    <input type="radio" name="genre" value="Homme" id="homme">
+                    <label for="homme">Homme  </label>
+                    <input type="radio" name="genre" value="Femme" id="femme">
+                    <label for="femme">Femme  </label>
+                    <input type="radio" name="genre" value="Grenouille" id="Grenouille">
+                    <label for="Grenouille">Grenouille  </label>
+                </div>
+                
+            </fieldset>
+            <fieldset>
+                <legend>Vos demandes</legend>
+                <select name="demande" class="textarea">
+                    <optgroup label="Contacts">
+                        <option value="Suggestions">Suggestions</option>
+                        <option value="Remarques">Remarques</option>
+                        <option value="Questions">Questions</option>
+                    </optgroup>
+                    <optgroup label="Demandes">
+                        <option value="Ajout d'oeuvres">Ajout d'oeuvres</option>
+                        <option value="Artistes">Artistes</option>
+                        <option value="Site internet">Site internet</option>
+                    </optgroup>
+                    <optgroup label="Réclamations">
+                        <option value="Retrait">Retrait</option>
+                        <option value="Attribution">Attributions</option>
+                        <option value="Violations">Violations</option>
+                    </optgroup>
+                </select>
+                <textarea class="text left textarea" name="desc" id="desc" cols="70" rows="10"
+                    placeholder="Ecrivez ici votre demande. Soyez précis, svp :D"></textarea>
+            </fieldset>
+            <button type="submit" class="left mid"><a href="../Laura_Kriszgruber_Projet2/">Valider</a></button>
+            <button type="reset" class="right mid ">Reset</button>
+            <button type="button" class="long"><a href="../Laura_Kriszgruber_Projet2/">Accueil</a></button>
+        </form>
+    </div>
+    <br>
+    <footer>
+        <p class="text">
+            Site créé par Laura Kriszgruber / Kiwah
+         </p>
+    </footer>
+    <br>
+</body>
+</html>

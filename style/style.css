@@ -1,0 +1,236 @@
+body {
+    background-image: linear-gradient(to top, #016b70, #2b7989, #4c879f, #6e94b2, #8ea1c2, #99accd, #a3b8d7, #aec3e2, #a8cfe9, #a6dbec, #a9e5ec, #b3efe8);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0px;
+    padding: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(243, 242, 247);
+
+}
+
+.imgHead {
+    max-width: 100%;
+    margin: 0;
+}
+
+
+/* Structure */
+
+.box {
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: rgb(8, 33, 17, 0.70);
+    width: 75vw;
+    margin: auto;
+    padding: 10px 50px;
+    border-radius: 25px;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    max-width: 75vw;
+}
+
+.text {
+    font-weight:500;
+    font-size: large;
+    margin: 10px;
+    max-width: 70vw;
+}
+
+.side {
+    width: 45vw; 
+}
+
+.inline {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Nav bar */
+
+nav {
+    position: sticky;
+    top: 0;
+    padding: 0;
+    padding-bottom: 15px;
+    margin: 0;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none; 
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(8, 33, 17);
+}
+
+ul > li {
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+
+ul > li > a {
+    color: rgb(243, 242, 247);
+    padding: 14px 16px;
+    text-decoration: none; 
+}
+
+ul > li > a:hover {
+    background-color: rgb(36, 121, 103);
+  }
+
+
+.active {
+    background-color: rgb(36, 121, 103);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(243, 242, 247);
+}
+
+
+/* Form */
+.right {
+    float: right;
+}
+
+.left{
+    float: left;
+}
+
+.mid {
+    width: 49%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px 0px 10px 0px ;
+}
+
+.long {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px 10px 0px ;
+}
+
+.textarea {
+    display: flex;
+    flex-direction: row;   
+}
+
+select {
+    width: 20%;
+    padding:2px;
+    margin: 10px;
+}
+
+form > button {
+    background-color: rgb(93, 127, 123);
+    color: rgb(243, 242, 247);
+    border-radius: 10px;
+    border-color: rgb(8, 33, 17);
+}
+
+form > button:hover {
+    background-color: rgb(1, 107, 112, 0.5);
+
+}
+
+
+/* Card */
+
+.card {
+    flex-basis: calc(30%);
+    height: fit-content;
+    margin: 10px;
+    padding: 0;
+    border-radius: 10px;
+    border: 2px solid rgb(8, 33, 17);
+    overflow: hidden;
+    text-align: center;
+    background-color: rgb(93, 127, 123);
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    border: rgb(1, 107, 112);
+}
+
+.imgcontainer {
+    padding: 10px;
+  }
+
+.collapsible{
+    background-color: rgb(93, 127, 123);
+    color: rgb(243, 242, 247);
+    cursor: pointer;
+    width: 100%;
+    border: 1px solid rgb(8, 33, 17);
+    font-size: 1em ;
+}
+
+.active, .collapsible:hover {
+    background-color: rgb(8, 33, 17);
+}
+
+.content {
+    display: none;
+    overflow: hidden;
+    background-color: rgb(8, 33, 17);
+ 
+}
+
+.check {
+    border: 1px solid rgb(8, 33, 17);
+    border-radius: 30px;
+    margin-bottom: 10px;
+    color: rgb(243, 242, 247);
+    background-color: rgb(36, 121, 103);
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.check:hover {
+    color: rgb(8, 33, 17);
+    background-color: rgb(1, 133, 139);
+    border: 1px solid rgb(8, 33, 17);
+}
+
+/* A propos  */
+
+.fa {
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(93, 127, 123);
+    border: 1px solid rgb(8, 33, 17);
+}
+
+.fa:hover {
+    background-color: rgb(36, 121, 103);
+    transition: all ease 0.3s;
+}
+
+
+footer {
+    text-align: center;
+    background-color: rgb(189, 186, 214, 0.5);
+    width: fit-content;
+    margin: auto;
+    padding: 10px 5%;
+    border-radius: 25px;
+}
